@@ -17,18 +17,18 @@
 <h2 id="%E9%80%9A%E8%BF%87-helm-charts-%E5%AE%89%E8%A3%85">通过 helm charts 安装 <a class="header-anchor" href="#%E9%80%9A%E8%BF%87-helm-charts-%E5%AE%89%E8%A3%85">#</a></h2>
 <p>建议采用 helm v3.1+ 来安装 Kruise，helm 是一个简单的命令行工具可以从 <a href="https://github.com/helm/helm/releases">这里</a> 获取。</p>
 <pre><code class="language-bash"><span class="hljs-comment"># Kubernetes 1.13 或 1.14 版本</span>
-helm install kruise https://github.com/openkruise/kruise/releases/download/v0.8.0/kruise-chart.tgz --<span class="hljs-built_in">disable</span>-openapi-validation
+helm install kruise https://github.com/openkruise/kruise/releases/download/v0.8.1/kruise-chart.tgz --<span class="hljs-built_in">disable</span>-openapi-validation
 
 <span class="hljs-comment"># Kubernetes 1.15 和更新的版本</span>
-helm install kruise https://github.com/openkruise/kruise/releases/download/v0.8.0/kruise-chart.tgz
+helm install kruise https://github.com/openkruise/kruise/releases/download/v0.8.1/kruise-chart.tgz
 </code></pre>
 <h2 id="%E9%80%9A%E8%BF%87-helm-charts-%E5%8D%87%E7%BA%A7">通过 helm charts 升级 <a class="header-anchor" href="#%E9%80%9A%E8%BF%87-helm-charts-%E5%8D%87%E7%BA%A7">#</a></h2>
 <p>如果你在使用旧版本的 Kruise，建议为了安全性和更丰富的功能，升级到最新版本：</p>
 <pre><code class="language-bash"><span class="hljs-comment"># Kubernetes 1.13 and 1.14</span>
-helm upgrade kruise https://github.com/openkruise/kruise/releases/download/v0.8.0/kruise-chart.tgz --<span class="hljs-built_in">disable</span>-openapi-validation
+helm upgrade kruise https://github.com/openkruise/kruise/releases/download/v0.8.1/kruise-chart.tgz --<span class="hljs-built_in">disable</span>-openapi-validation
 
 <span class="hljs-comment"># Kubernetes 1.15 and newer versions</span>
-helm upgrade kruise https://github.com/openkruise/kruise/releases/download/v0.8.0/kruise-chart.tgz
+helm upgrade kruise https://github.com/openkruise/kruise/releases/download/v0.8.1/kruise-chart.tgz
 </code></pre>
 <p>注意：</p>
 <ol>
@@ -71,7 +71,7 @@ helm upgrade kruise https://github.com/openkruise/kruise/releases/download/v0.8.
 <tr>
 <td><code>manager.image.tag</code></td>
 <td>Tag for kruise-manager image</td>
-<td><code>v0.8.0</code></td>
+<td><code>v0.8.1</code></td>
 </tr>
 <tr>
 <td><code>manager.resources.limits.cpu</code></td>
@@ -219,7 +219,7 @@ $ helm install kruise https://... --<span class="hljs-built_in">set</span> featu
 <pre><code class="language-bash">$ helm uninstall kruise
 release <span class="hljs-string">"kruise"</span> uninstalled
 </code></pre>
-</div></section><footer class="footer-container"><div class="footer-body"><img src="/img/kruise_gray.png"/><div class="cols-container"><div class="col col-12"><h3>Disclaimer</h3><p>OpenKruise is an open-source project under Apache License 2.0.</p></div><div class="col col-6"><dl><dt>文档</dt><dd><a href="/zh-cn/docs/what_is_openkruise.html" target="_self">OpenKruise 是什么</a></dd><dd><a href="/zh-cn/docs/components.html" target="_self">组件</a></dd><dd><a href="https://github.com/openkruise/kruise/blob/master/CONTRIBUTING.md" target="_self">贡献指南</a></dd></dl></div><div class="col col-6"><dl><dt>资源</dt></dl></div></div><div class="copyright"><span>Copyright © 2019 The OpenKruise Authors, The Kubernetes Authors</span></div></div></footer></div></div>
+</div></section><footer class="footer-container"><div class="cloud-native"><div class="container"><img src="https://d33wubrfki0l68.cloudfront.net/ea0d91fac8683c38ea9a1fb8a4e9914627ac6aae/8efa9/img/logos/cloud-native-computing.svg"/><p>We are a <a href="https://www.cncf.io">Cloud Native Computing Foundation</a> sandbox project.</p></div></div><div class="copyright"><span>Copyright © 2021 The OpenKruise Authors. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our Trademark Usage page: <a href="https://www.linuxfoundation.org/trademark-usage">https://www.linuxfoundation.org/trademark-usage</a></span></div></footer></div></div>
 	<script src="https://f.alicdn.com/react/15.4.1/react-with-addons.min.js"></script>
 	<script src="https://f.alicdn.com/react/15.4.1/react-dom.min.js"></script>
 	<script>
